@@ -13,7 +13,7 @@ interface Invoice {
   status: string;
 }
 
-export default function page() {
+export default function Page() {
   const [selectedInvoice, setSelectedInvoice] = useState<Invoice | null>(null);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const [invoices, setInvoices] = useState<Invoice[]>([
