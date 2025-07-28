@@ -22,7 +22,7 @@ export default function auth() {
 
   return (
     <>
-      Hello
+      Hello ku
       {/* <form onSubmit={handleLogin}>
         <div className="flex gap-2">
           <input
