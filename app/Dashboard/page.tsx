@@ -62,7 +62,7 @@ const dataCard = [
 
 export default function page() {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-5 gap-3">
+    <div className="grid grid-cols-1 xl:grid-cols-4 gap-3">
       {dataCard.map((item, index) => (
         <Card key={index} title={`Kamar ${index + 1}`} {...item} />
       ))}

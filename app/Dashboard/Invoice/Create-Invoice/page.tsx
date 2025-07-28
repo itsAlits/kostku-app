@@ -3,11 +3,8 @@ import Invoice from "@/app/Components/Form/Invoice/invoice";
 export default function page() {
   return (
     <div>
-      <div className="bg-white rounded border border-gray-200 p-4">
-        <h1 className="font-medium">Create Invoice</h1>
-      </div>
       <div className="flex justify-end">
-        <div className="mt-2 w-full">
+        <div className="w-full">
           <select
             defaultValue="Pick a color"
             className="select border-gray-200 focus-within:shadow-none focus-within:outline-none w-full"

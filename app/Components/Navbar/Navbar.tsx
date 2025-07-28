@@ -11,7 +11,7 @@ export default function Navbar({
 }: NavbarProps) {
   return (
     <nav
-      className={`h-14 border-b fixed w-full top-0 bg-white border-gray-200 transition-all duration-300 ease-in-out ${
+      className={`h-14 border-b fixed w-full z-10 top-0 bg-white border-gray-200 transition-all duration-300 ease-in-out ${
         isSidebarOpen ? "pl-64" : "pl-0"
       }`}
     >
