@@ -98,7 +98,9 @@ export default function Invoice() {
         </div>
       </div>
 
-      <button className="btn btn-primary mt-3 w-full">Create Invoice</button>
+      <button className="btn btn-primary rounded mt-3 w-full">
+        Create Invoice
+      </button>
     </form>
   );
 }

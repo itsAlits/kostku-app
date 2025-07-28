@@ -5,6 +5,8 @@ interface InvoiceCardProps {
   tenantName: string;
   total: string;
   paymentDate: string;
+  status?: string;
+  onClick?: () => void;
 }
 
 export default function InvoiceCard({
@@ -12,10 +14,15 @@ export default function InvoiceCard({
   tenantName,
   total,
   paymentDate,
+  status = "Belum Lunas",
+  onClick,
 }: InvoiceCardProps) {
   return (
     <>
-      <div className="bg-white rounded border hover:shadow-sm cursor-pointer border-gray-200 p-3">
+      <div
+        className="bg-white rounded border hover:shadow-sm cursor-pointer border-gray-200 p-3"
+        onClick={onClick}
+      >
         <div className="text-gray-500">
           <h1 className="text-sm font-medium text-gray-900">{date}</h1>
           <div className="mt-4 flex justify-between">
@@ -32,7 +39,13 @@ export default function InvoiceCard({
           </div>
           <div className="mt-1 flex justify-between">
             <p className="text-xs">Status</p>
-            <p className="text-xs">{paymentDate ? "Lunas" : "Belum Lunas"}</p>
+            <p
+              className={`text-xs ${
+                status === "Lunas" ? "text-green-600" : "text-red-600"
+              }`}
+            >
+              {status}
+            </p>
           </div>
         </div>
       </div>

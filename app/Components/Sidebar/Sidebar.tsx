@@ -130,7 +130,7 @@ export default function Sidebar({ isOpen }: SidebarProps) {
                         </svg>
                       </button>
                       {openDropdowns[item.name] && (
-                        <ul className="ml-2 mt-1 space-y-1">
+                        <ul className="mt-1 space-y-1">
                           {item.subItems?.map((subItem) => (
                             <li key={subItem.name}>
                               <Link

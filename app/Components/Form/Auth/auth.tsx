@@ -40,7 +40,7 @@ export default function auth() {
           />
         </div>
         <div className="mt-2">
-          <button type="submit" className="btn btn-primary mt-1 w-full">
+          <button type="submit" className="btn btn-primary rounded mt-1 w-full">
             Masuk
           </button>
         </div>

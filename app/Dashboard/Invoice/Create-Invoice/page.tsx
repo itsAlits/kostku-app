@@ -10,9 +10,11 @@ export default function page() {
             className="select border-gray-200 focus-within:shadow-none focus-within:outline-none w-full"
           >
             <option>Pilih Kamar</option>
-            <option>Crimson</option>
-            <option>Amber</option>
-            <option>Velvet</option>
+            {[...Array(10)].map((_, index) => (
+              <option key={index + 1} value={index + 1}>
+                Kamar No {index + 1}
+              </option>
+            ))}
           </select>
         </div>
       </div>
