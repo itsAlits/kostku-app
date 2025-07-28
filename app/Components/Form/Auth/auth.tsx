@@ -1,28 +1,29 @@
-"use client";
+// "use client";
 
-import { authService, AuthData } from "@/app/Service/authService";
-import { useState } from "react";
+// import { authService, AuthData } from "@/app/Service/authService";
+// import { useState } from "react";
 
 export default function auth() {
-  const [error, setError] = useState<string | null>(null);
-  const [username, setUsername] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  // const [error, setError] = useState<string | null>(null);
+  // const [username, setUsername] = useState<string>("");
+  // const [password, setPassword] = useState<string>("");
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const data = await authService.login(username, password);
-      console.log("Login successful:", data);
-      setError(null);
-    } catch (err) {
-      setError("Login failed. Please check your credentials.");
-      console.error(err);
-    }
-  };
+  // const handleLogin = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   try {
+  //     const data = await authService.login(username, password);
+  //     console.log("Login successful:", data);
+  //     setError(null);
+  //   } catch (err) {
+  //     setError("Login failed. Please check your credentials.");
+  //     console.error(err);
+  //   }
+  // };
 
   return (
     <>
-      <form onSubmit={handleLogin}>
+      Hello
+      {/* <form onSubmit={handleLogin}>
         <div className="flex gap-2">
           <input
             type="text"
@@ -40,12 +41,12 @@ export default function auth() {
           />
         </div>
         <div className="mt-2">
-          <button type="submit" className="btn btn-primary rounded mt-1 w-full">
+          <button type="submit" className="btn btn-primary mt-1 w-full">
             Masuk
           </button>
         </div>
         {error && <div className="text-red-500 mt-2">{error}</div>}
-      </form>
+      </form> */}
     </>
   );
 }

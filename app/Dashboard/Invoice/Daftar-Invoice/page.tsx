@@ -53,12 +53,12 @@ export default function page() {
     setSelectedInvoice(null);
   };
 
-  const handleStatusChange = (newStatus: string) => {
+  const handleStatusChange = (newStatus: string, newPaymentDate: string) => {
     if (selectedInvoice) {
       setInvoices((prev) =>
         prev.map((invoice) =>
           invoice.id === selectedInvoice.id
-            ? { ...invoice, status: newStatus }
+            ? { ...invoice, status: newStatus, paymentDate: newPaymentDate }
             : invoice
         )
       );
