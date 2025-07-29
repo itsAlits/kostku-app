@@ -22,21 +22,20 @@ export default function auth() {
 
   return (
     <>
-      Hello ku
-      {/* <form onSubmit={handleLogin}>
+      <form>
         <div className="flex gap-2">
           <input
             type="text"
             placeholder="Masukkan username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            // value={username}
+            // onChange={(e) => setUsername(e.target.value)}
             className="input focus-within:border-primary focus-within:outline-none mt-1 w-full"
           />
           <input
             type="password"
             placeholder="Masukkan password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}
             className="input focus-within:border-primary focus-within:outline-none mt-1 w-full"
           />
         </div>
@@ -45,8 +44,8 @@ export default function auth() {
             Masuk
           </button>
         </div>
-        {error && <div className="text-red-500 mt-2">{error}</div>}
-      </form> */}
+        {/* {error && <div className="text-red-500 mt-2">{error}</div>} */}
+      </form>
     </>
   );
 }

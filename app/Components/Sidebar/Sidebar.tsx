@@ -69,10 +69,8 @@ export default function Sidebar({ isOpen }: SidebarProps) {
       path: "/tenant",
       hasDropdown: true,
       subItems: [
-        { name: "Daftar Penyewa", path: "/tenant/list" },
-        { name: "Tambah Penyewa", path: "/tenant/add" },
-        { name: "Penyewa Aktif", path: "/tenant/active" },
-        { name: "Penyewa Keluar", path: "/tenant/inactive" },
+        { name: "Tambah Penyewa", path: "/Dashboard/Penyewa/Tambah-Penyewa" },
+        { name: "Daftar Penyewa", path: "/Dashboard/Penyewa/Daftar-Penyewa" },
       ],
     },
     {

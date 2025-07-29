@@ -207,7 +207,7 @@ export default function Invoice() {
 
       {/* Tampilkan Preview Total */}
       {listrikBulanIni && jumlahOrang && (
-        <div className="mt-4 p-4 bg-gray-50 rounded-md border border-base-300">
+        <div className="mt-4 p-4 bg-[#f5f5f5] rounded-md">
           <h4 className="font-medium text-md mb-5">Preview Total:</h4>
           <div className="space-y-2 text-sm">
             <div className="flex pb-1 justify-between">

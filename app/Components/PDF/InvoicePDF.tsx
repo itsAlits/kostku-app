@@ -143,23 +143,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: "#6b7280",
   },
-  invoiceInfo: {
-    marginBottom: 20,
-    padding: 10,
-    backgroundColor: "#f9fafb",
-    borderRadius: 5,
-    border: "1px solid #e5e7eb",
-  },
-  invoiceNumber: {
-    fontSize: 10,
-    fontWeight: "bold",
-    color: "#1f2937",
-    marginBottom: 5,
-  },
-  invoiceDate: {
-    fontSize: 10,
-    color: "#6b7280",
-  },
 });
 
 export const InvoicePDF: React.FC<InvoicePDFProps> = ({ invoiceData }) => {
@@ -177,14 +160,6 @@ export const InvoicePDF: React.FC<InvoicePDFProps> = ({ invoiceData }) => {
       <Page size="A4" style={styles.page}>
         <Text style={styles.header}>INVOICE AWD KOST</Text>
         <Text style={styles.subtitle}>Kamar No 1</Text>
-
-        {/* Invoice Info */}
-        <View style={styles.invoiceInfo}>
-          <Text style={styles.invoiceNumber}>Invoice #{invoiceData.date}</Text>
-          <Text style={styles.invoiceDate}>
-            Tanggal dibuat: {new Date().toLocaleDateString("id-ID")}
-          </Text>
-        </View>
 
         {/* Table */}
         <View style={styles.table}>
@@ -214,15 +189,6 @@ export const InvoicePDF: React.FC<InvoicePDFProps> = ({ invoiceData }) => {
             </View>
             <View style={styles.tableCol}>
               <Text style={styles.tableCell}>{invoiceData.tenantName}</Text>
-            </View>
-          </View>
-
-          <View style={styles.tableRow}>
-            <View style={styles.tableCol}>
-              <Text style={styles.tableCell}>Tanggal Jatuh Tempo</Text>
-            </View>
-            <View style={styles.tableCol}>
-              <Text style={styles.tableCell}>{invoiceData.paymentDate}</Text>
             </View>
           </View>
 
